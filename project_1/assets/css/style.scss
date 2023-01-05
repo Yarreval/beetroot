@@ -162,7 +162,7 @@ input[type=search] {
             left: -60px;
         }
         &:hover {
-            scale: 1.04;
+            transform: scale(1.05);
         }
     }
 }
@@ -403,7 +403,7 @@ h4 {
 
 i:hover {
     color: #5373FD;
-    scale: 1.25;
+    transform: scale(1.25);
 }
 
 .fa-brands {
