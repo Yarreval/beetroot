@@ -10,8 +10,23 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+li {
+  list-style: none;
+}
+
 body {
   color: #FFFFFF;
+}
+
+.container {
+  max-width: 1320px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #header {
@@ -21,9 +36,13 @@ body {
   height: 100vh;
 }
 #header .search {
-  display: block;
-  margin: 0 auto;
+  padding-top: 295px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#header .search .header_form {
+  display: flex;
 }
 #header .search h1 {
   font-family: "Josefin Sans", sans-serif;
@@ -32,14 +51,13 @@ body {
   font-size: 48px;
   line-height: 52px;
   text-transform: uppercase;
+  padding-bottom: 8px;
 }
 #header .search p {
-  font-family: "Josefin Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  line-height: 28px;
   letter-spacing: 0.31em;
+  padding-bottom: 48px;
 }
 
 input[type=search]:focus {
@@ -61,10 +79,19 @@ input[type=search] {
   letter-spacing: 0.2em;
 }
 
-.btn {
-  width: 139px;
-  height: 52px;
+.header_form {
+  max-width: 650px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  display: flex;
+  padding: 2px;
+}
+.header_form .header_btn {
+  border: none;
+  width: 30%;
   background: #5373FD;
+  color: #FFFFFF;
   font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
@@ -72,9 +99,314 @@ input[type=search] {
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 24px;
+}
+
+.header_btn::before {
+  content: url(../icons/search.svg);
+  position: relative;
+  top: 3px;
+  left: -14px;
+}
+
+.scroll_down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.scroll_down a {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #fff;
+}
+.scroll_down a::after {
+  content: url(../images/scroll.svg);
+  position: relative;
+  top: 16px;
+  left: -60px;
+}
+.scroll_down a:hover {
+  scale: 1.04;
+}
+
+.navigation {
+  background-color: #5373FD;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.navigation .nav_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation .nav_inner .logo {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+.navigation .nav_inner ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  list-style: none;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.first {
+  background-size: cover;
+  background-image: url(../images/WhyBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #3b3b3b;
+}
+.first .section_first_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.first .section_first_inner .description {
+  max-width: 648px;
+  padding: 150px 0;
+}
+.first .section_first_inner .description p {
+  letter-spacing: 0.1em;
+  padding-bottom: 28px;
+}
+.first .section_first_inner .first_images {
+  max-width: 424px;
+  padding-bottom: 16px;
+}
+
+p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
   color: #FFFFFF;
 }
-.btn img {
-  height: 16px;
-  width: 16px;
+
+h2 {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  padding-bottom: 24px;
+}
+
+h3 {
+  text-transform: uppercase;
+  padding: 16px 0;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+h4 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.first_steps {
+  background-size: cover;
+  background-image: url(../images/BG_first.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+.first_steps ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 240px;
+}
+.first_steps ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 107px 0 60px;
+  max-width: 424px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+.first_steps ul li img {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  padding-bottom: 14px;
+}
+
+.second {
+  background-size: cover;
+  background-image: url(../images/render-1477041_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 684px;
+  padding-top: 220px;
+}
+.second .section_second_inner {
+  max-width: 648px;
+  background: rgba(35, 35, 35, 0.9);
+}
+.second h4 {
+  font-size: 20px;
+}
+.second .description {
+  padding: 32px 44px;
+}
+.second p {
+  padding-bottom: 24px;
+}
+
+.second_right {
+  background-size: cover;
+  background-image: url(../images/spain.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.second_right .container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.last {
+  background-size: cover;
+  background-image: url(../images/BG_last.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 680px;
+}
+.last h2 {
+  padding: 120px 0 60px 475px;
+}
+.last .last_inner {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background: #333333;
+}
+.last p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.last p::before {
+  content: url(../icons/quote-left.svg);
+}
+.last .description {
+  padding: 0 60px;
+}
+
+.footer .footer_inner {
+  text-align: center;
+  background-color: #000;
+  padding: 80px 0;
+}
+.footer a {
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+.footer p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: 8px 0 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+}
+.footer .footer_social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.btn {
+  background-color: #5373FD;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border: transparent;
+  color: #FFFFFF;
+  width: 213px;
+  height: 60px;
+}
+
+.decor_lines::before {
+  content: "";
+  width: 350px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 23%;
+  bottom: 100px;
+  border: 1px dashed transparent;
+  border-top: 1px dashed #FFF;
+}
+
+.decor_lines::after {
+  content: "";
+  width: 350px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 53%;
+  bottom: 100px;
+  border: 1px dashed transparent;
+  border-top: 1px dashed #FFF;
+}
+
+i:hover {
+  color: #5373FD;
+  scale: 1.25;
+}
+
+.fa-brands {
+  font-size: 32px;
 }
