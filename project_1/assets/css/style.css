@@ -178,7 +178,7 @@ input[type=search] {
 }
 .first .section_first_inner {
   display: flex;
-  justify-content: space-between;
+  gap: 135px;
 }
 .first .section_first_inner .description {
   max-width: 648px;
@@ -190,7 +190,11 @@ input[type=search] {
 }
 .first .section_first_inner .first_images {
   max-width: 424px;
-  padding-bottom: 16px;
+  padding: 124px 0 16px;
+}
+.first .section_first_inner img:last-child {
+  float: right;
+  padding-top: 16px;
 }
 
 p {
@@ -257,10 +261,9 @@ h4 {
   text-align: center;
 }
 .first_steps ul li img {
-  width: 64px;
-  height: 64px;
+  height: 83px;
   margin: 0 auto;
-  padding-bottom: 14px;
+  padding-bottom: 20px;
 }
 
 .second {
@@ -380,26 +383,29 @@ h4 {
 
 .decor_lines::before {
   content: "";
-  width: 350px;
-  height: 100px;
+  width: 540px;
+  height: 540px;
   border-radius: 50%;
   position: absolute;
-  left: 23%;
-  bottom: 100px;
+  top: 10px;
+  left: 17%;
   border: 1px dashed transparent;
   border-top: 1px dashed #FFF;
+  opacity: 0.5;
 }
 
 .decor_lines::after {
   content: "";
-  width: 350px;
-  height: 100px;
+  width: 540px;
+  height: 540px;
   border-radius: 50%;
   position: absolute;
-  left: 53%;
+  top: 10px;
+  left: 47%;
   bottom: 100px;
   border: 1px dashed transparent;
   border-top: 1px dashed #FFF;
+  opacity: 0.5;
 }
 
 i:hover {
