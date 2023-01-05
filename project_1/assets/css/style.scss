@@ -28,7 +28,10 @@ body {
     background-image: url(../images/HeaderBackground.jpg);
     background-repeat: no-repeat;
     height: 100vh;
+
     .search {
+        display: block;
+        margin: 0 auto;
         text-align: center;
 
         h1 {
@@ -69,7 +72,7 @@ input[type=search] {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    /* identical to box height, or 143% */
+    
 
     letter-spacing: 0.2em;
 }
@@ -79,15 +82,15 @@ input[type=search] {
         height: 16px;
         width: 16px;
     }
-//     width: 139px;
-//     height: 52px;
-//     background: #5373FD;
-//     font-family: 'Aleo';
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 20px;
-//     letter-spacing: 0.1em;
-//     text-transform: uppercase;
-//     color: #FFFFFF;
+    width: 139px;
+    height: 52px;
+    background: #5373FD;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
