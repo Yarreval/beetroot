@@ -33,7 +33,7 @@ body {
   background-size: cover;
   background-image: url(../images/HeaderBackground.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
+  background-position: top;
 }
 #header .search {
   padding-top: 295px;
@@ -116,7 +116,8 @@ input[type=search] {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  padding-top: 208px;
+  margin-bottom: 140px;
 }
 .scroll_down a {
   font-family: "Josefin Sans";
@@ -127,15 +128,25 @@ input[type=search] {
   text-align: center;
   letter-spacing: 0.2em;
   color: #fff;
-}
-.scroll_down a::after {
-  content: url(../images/scroll.svg);
   position: relative;
-  top: 16px;
-  left: -60px;
+  top: 0;
+  left: 0;
 }
-.scroll_down a:hover {
-  transform: scale(1.05);
+.scroll_down a:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: rotate(-45deg);
+  margin-bottom: 120px;
+}
+
+.description {
+  max-width: 648px;
 }
 
 .navigation {
@@ -181,8 +192,7 @@ input[type=search] {
   gap: 135px;
 }
 .first .section_first_inner .description {
-  max-width: 648px;
-  padding: 150px 0;
+  padding: 190px 0;
 }
 .first .section_first_inner .description p {
   letter-spacing: 0.1em;
@@ -194,7 +204,7 @@ input[type=search] {
 }
 .first .section_first_inner img:last-child {
   float: right;
-  padding-top: 16px;
+  padding-top: 12px;
 }
 
 p {
@@ -204,6 +214,7 @@ p {
   font-size: 16px;
   line-height: 28px;
   color: #FFFFFF;
+  letter-spacing: 0.1em;
 }
 
 h2 {
@@ -233,6 +244,7 @@ h4 {
   font-size: 16px;
   line-height: 28px;
   color: #FFFFFF;
+  letter-spacing: 0.1em;
 }
 
 .first_steps {
@@ -251,7 +263,7 @@ h4 {
 .first_steps ul li {
   display: flex;
   flex-direction: column;
-  padding: 107px 0 60px;
+  padding: 127px 0 60px;
   max-width: 424px;
   font-family: "Aleo";
   font-style: normal;
@@ -280,9 +292,11 @@ h4 {
 }
 .second h4 {
   font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-top: 10px;
 }
 .second .description {
-  padding: 32px 44px;
+  padding: 33px 32px;
 }
 .second p {
   padding-bottom: 24px;
@@ -312,8 +326,9 @@ h4 {
 .last .last_inner {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
   background: #333333;
+  justify-content: start;
+  gap: 61px;
 }
 .last p {
   font-family: "Josefin Sans";
@@ -322,12 +337,15 @@ h4 {
   font-size: 16px;
   line-height: 28px;
   color: #FFFFFF;
+  letter-spacing: 0.1em;
 }
 .last p::before {
   content: url(../icons/quote-left.svg);
+  padding-right: 5px;
 }
 .last .description {
-  padding: 0 60px;
+  margin-top: 29px;
+  max-width: 760px;
 }
 
 .footer .footer_inner {
@@ -352,6 +370,7 @@ h4 {
   font-size: 16px;
   line-height: 28px;
   color: #FFFFFF;
+  letter-spacing: 0.1em;
   padding: 8px 0 20px;
   font-weight: 400;
   font-size: 14px;
@@ -363,6 +382,10 @@ h4 {
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+
+.second_btn {
+  margin-bottom: 11px;
 }
 
 .btn {
@@ -383,12 +406,12 @@ h4 {
 
 .decor_lines::before {
   content: "";
-  width: 540px;
-  height: 540px;
+  width: 560px;
+  height: 660px;
   border-radius: 50%;
   position: absolute;
-  top: 10px;
-  left: 17%;
+  top: 43px;
+  left: 16%;
   border: 1px dashed transparent;
   border-top: 1px dashed #FFF;
   opacity: 0.5;
@@ -396,11 +419,11 @@ h4 {
 
 .decor_lines::after {
   content: "";
-  width: 540px;
-  height: 540px;
+  width: 560px;
+  height: 660px;
   border-radius: 50%;
   position: absolute;
-  top: 10px;
+  top: 43px;
   left: 47%;
   bottom: 100px;
   border: 1px dashed transparent;
@@ -415,4 +438,18 @@ i:hover {
 
 .fa-brands {
   font-size: 32px;
+}
+
+@media screen and (max-width: 1360px) {
+  .container {
+    max-width: 1360px;
+  }
+
+  .decor_lines::before {
+    left: 13%;
+  }
+
+  .description {
+    background: pink;
+  }
 }

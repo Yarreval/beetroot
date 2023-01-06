@@ -5,6 +5,7 @@
     font-size: 16px;
     line-height: 28px;
     color: #FFFFFF;
+    letter-spacing: 0.1em;
 }
 
 @mixin head2 {
@@ -62,7 +63,7 @@ body {
     background-size: cover;
     background-image: url(../images/HeaderBackground.jpg);
     background-repeat: no-repeat;
-    height: 100vh;
+    background-position: top;
     .search {
         padding-top: 295px;
         text-align: center;
@@ -145,7 +146,9 @@ input[type=search] {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    padding-top: 208px;
+    margin-bottom: 140px;
+ 
     a {
         font-family: 'Josefin Sans';
         font-style: normal;
@@ -155,24 +158,36 @@ input[type=search] {
         text-align: center;
         letter-spacing: 0.2em;
         color: #fff;
-        &::after {
-            content: url(../images/scroll.svg);
-            position: relative;
-            top: 16px;
-            left: -60px;
-        }
-        &:hover {
-            transform: scale(1.05);
+        position: relative;
+        top: 0;
+        left: 0;
+       
+        &:after {
+            content: "";
+            width: 9px;
+            height: 9px;
+            border-left: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: rotate(-45deg);
+            margin-bottom: 120px;
+         
         }
     }
 }
 
+.description {
+    max-width: 648px;
+}
 .navigation {
     background-color: #5373FD;
     height: 84px;
     display: flex;
     align-items: center;
     text-transform: uppercase;
+ 
     .nav_inner {
         display: flex;
         justify-content: space-between;
@@ -208,8 +223,8 @@ input[type=search] {
         display: flex;
         gap: 135px;
         .description {
-            max-width: 648px;
-            padding: 150px 0;
+            // max-width: 648px;
+            padding: 190px 0;
             p {
                 letter-spacing: 0.1em;
                 padding-bottom: 28px;
@@ -221,7 +236,7 @@ input[type=search] {
         }
         img:last-child {
             float: right;
-            padding-top: 16px;
+            padding-top: 12px;
         }
     }
 }
@@ -256,7 +271,7 @@ h4 {
         li {
             display: flex;
             flex-direction: column;
-            padding: 107px 0 60px;
+            padding: 127px 0 60px;
             max-width: 424px;
             font-family: 'Aleo';
             font-style: normal;
@@ -286,9 +301,11 @@ h4 {
     }
     h4 {
         font-size: 20px;
+        letter-spacing: 0.1em;
+        margin-top: 10px;
     }
     .description {
-        padding: 32px 44px;
+        padding: 33px 32px;
     }
     p {
         padding-bottom: 24px;
@@ -318,17 +335,21 @@ h4 {
     .last_inner {
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
         background: #333333;
+        justify-content: start;
+        gap: 61px;
     }
     p {
         @include paragraph;
         &::before {
             content: url(../icons/quote-left.svg);
+            padding-right: 5px;
         }
     }
     .description {
-        padding: 0 60px;
+        margin-top: 29px;
+       
+        max-width: 760px;
     }
 }
 
@@ -364,6 +385,10 @@ h4 {
     }
 }
 
+.second_btn {
+    margin-bottom: 11px;
+}
+
 .btn {
     background-color: #5373FD;
     font-family: 'Aleo';
@@ -382,12 +407,12 @@ h4 {
 
 .decor_lines::before {
     content: "";
-    width: 540px;
-    height: 540px;
+    width: 560px;
+    height: 660px;
     border-radius: 50%;
     position: absolute;
-    top: 10px;
-    left: 17%;
+    top: 43px;
+    left: 16%;
     border: 1px dashed transparent;
     border-top: 1px dashed #FFF;
     opacity: 0.5;
@@ -395,11 +420,11 @@ h4 {
 
 .decor_lines::after {
     content: "";
-    width: 540px;
-    height: 540px;
+    width: 560px;
+    height: 660px;
     border-radius: 50%;
     position: absolute;
-    top: 10px;
+    top: 43px;
     left: 47%;
     bottom: 100px;
     border: 1px dashed transparent;
@@ -415,3 +440,17 @@ i:hover {
 .fa-brands {
     font-size: 32px;
 }
+
+
+
+@media screen and (max-width: 1360px) {
+  .container {
+    max-width: 1360px;
+  }
+  .decor_lines::before {
+    left: 13%;
+  }
+  .description {
+    background: pink;
+  }
+    }
