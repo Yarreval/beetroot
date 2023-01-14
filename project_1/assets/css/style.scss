@@ -510,13 +510,33 @@ input[type=search] {
     opacity: 0.5;
 }
 
-i:hover {
-    color: #5373FD;
-    transform: scale(1.25);
-}
-
 .fa-brands {
     font-size: 32px;
+
+    &:hover {
+        transform: scale(1.25);
+        transition: all 0.4s ease;
+    }
+
+    &.fa-facebook-f:hover {
+        color: rgb(40, 5, 122);
+    }
+
+    &.fa-twitter:hover {
+        color: #486BFE;
+    }
+
+    &.fa-linkedin:hover {
+        color: #123bf0;
+    }
+
+    &.fa-youtube:hover {
+        color: red;
+    }
+
+    &.fa-pinterest:hover {
+        color: rgb(131, 6, 6);
+    }
 }
 
 #mobile_menu,

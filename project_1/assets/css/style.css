@@ -467,13 +467,27 @@ input[type=search] {
   opacity: 0.5;
 }
 
-i:hover {
-  color: #5373FD;
-  transform: scale(1.25);
-}
-
 .fa-brands {
   font-size: 32px;
+}
+.fa-brands:hover {
+  transform: scale(1.25);
+  transition: all 0.4s ease;
+}
+.fa-brands.fa-facebook-f:hover {
+  color: #28057a;
+}
+.fa-brands.fa-twitter:hover {
+  color: #486BFE;
+}
+.fa-brands.fa-linkedin:hover {
+  color: #123bf0;
+}
+.fa-brands.fa-youtube:hover {
+  color: red;
+}
+.fa-brands.fa-pinterest:hover {
+  color: #830606;
 }
 
 #mobile_menu,
