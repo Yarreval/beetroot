@@ -38,7 +38,8 @@ html,
 body {
     width: 100%;
     height: 100%;
-}
+    
+   }
 
 a {
     text-decoration: none;
@@ -47,6 +48,22 @@ a {
 
 li {
     list-style: none;
+}
+
+p {
+    @include paragraph;
+}
+
+h2 {
+    @include head2;
+}
+
+h3 {
+    @include head3;
+}
+
+h4 {
+    @include paragraph;
 }
 
 body {
@@ -60,18 +77,22 @@ body {
 }
 
 #header {
+    height: 100vh;
     background-size: cover;
     background-image: url(../images/HeaderBackground.jpg);
     background-repeat: no-repeat;
     background-position: top;
+
     .search {
         padding-top: 295px;
         text-align: center;
         display: flex;
         flex-direction: column;
+
         .header_form {
             display: flex;
         }
+
         h1 {
             font-family: 'Josefin Sans', sans-serif;
             font-style: normal;
@@ -81,6 +102,7 @@ body {
             text-transform: uppercase;
             padding-bottom: 8px;
         }
+
         p {
             font-weight: 400;
             font-size: 22px;
@@ -116,6 +138,7 @@ input[type=search] {
     margin: 0 auto;
     display: flex;
     padding: 2px;
+
     .header_btn {
         border: none;
         width: 30%;
@@ -148,7 +171,7 @@ input[type=search] {
     align-items: center;
     padding-top: 208px;
     margin-bottom: 140px;
- 
+
     a {
         font-family: 'Josefin Sans';
         font-style: normal;
@@ -161,7 +184,7 @@ input[type=search] {
         position: relative;
         top: 0;
         left: 0;
-       
+
         &:after {
             content: "";
             width: 9px;
@@ -173,7 +196,7 @@ input[type=search] {
             left: 50%;
             transform: rotate(-45deg);
             margin-bottom: 120px;
-         
+
         }
     }
 }
@@ -181,17 +204,35 @@ input[type=search] {
 .description {
     max-width: 648px;
 }
-.navigation {
+
+
+#navigation {
     background-color: #5373FD;
-    height: 84px;
+    min-height: 84px;
     display: flex;
     align-items: center;
     text-transform: uppercase;
- 
+    overflow: hidden;
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+
+    }
+
+    &.sticky+.first {
+        padding-top: 106px;
+    }
+
+
     .nav_inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .logo {
             font-family: 'Josefin Sans';
             font-style: normal;
@@ -200,6 +241,7 @@ input[type=search] {
             line-height: 28px;
             letter-spacing: 0.1em;
         }
+
         ul {
             display: flex;
             justify-content: space-around;
@@ -219,43 +261,36 @@ input[type=search] {
     background-repeat: no-repeat;
     background-position: top;
     background-color: #3b3b3b;
+
     .section_first_inner {
         display: flex;
         gap: 135px;
+
         .description {
             // max-width: 648px;
             padding: 190px 0;
+
             p {
                 letter-spacing: 0.1em;
                 padding-bottom: 28px;
             }
         }
-        .first_images {
-            max-width: 424px;
-            padding: 124px 0 16px;
+
+        .first_images img{
+            max-width: 350px;
+            width: 100%;
         }
-        img:last-child {
-            float: right;
-            padding-top: 12px;
-        }
+
+        padding: 124px 0 16px;
+
+    }
+
+    img:last-child {
+        float: right;
+        padding-top: 12px;
     }
 }
 
-p {
-    @include paragraph;
-}
-
-h2 {
-    @include head2;
-}
-
-h3 {
-    @include head3;
-}
-
-h4 {
-    @include paragraph;
-}
 
 .first_steps {
     background-size: cover;
@@ -263,15 +298,17 @@ h4 {
     background-repeat: no-repeat;
     background-position: top;
     position: relative;
+
     ul {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 240px;
+
         li {
             display: flex;
             flex-direction: column;
-            padding: 127px 0 60px;
+            padding: 127px 10px 60px;
             max-width: 424px;
             font-family: 'Aleo';
             font-style: normal;
@@ -279,6 +316,7 @@ h4 {
             font-size: 36px;
             line-height: 40px;
             text-align: center;
+
             img {
                 height: 83px;
                 margin: 0 auto;
@@ -295,18 +333,22 @@ h4 {
     background-position: top;
     min-height: 684px;
     padding-top: 220px;
+
     .section_second_inner {
         max-width: 648px;
         background: rgba(35, 35, 35, 0.9);
     }
+
     h4 {
         font-size: 20px;
         letter-spacing: 0.1em;
         margin-top: 10px;
     }
+
     .description {
         padding: 33px 32px;
     }
+
     p {
         padding-bottom: 24px;
     }
@@ -317,6 +359,7 @@ h4 {
     background-image: url(../images/spain.jpg);
     background-repeat: no-repeat;
     background-position: top;
+
     .container {
         display: flex;
         flex-direction: row-reverse;
@@ -329,26 +372,33 @@ h4 {
     background-repeat: no-repeat;
     background-position: top;
     min-height: 680px;
+
     h2 {
-        padding: 120px 0 60px 475px;
+        padding: 120px 0 ;
+        text-align: center;
     }
+
     .last_inner {
         display: flex;
+        align-items: center;
         flex-direction: row-reverse;
         background: #333333;
         justify-content: start;
         gap: 61px;
     }
+
     p {
         @include paragraph;
+
         &::before {
             content: url(../icons/quote-left.svg);
             padding-right: 5px;
         }
     }
-    .description {
+
+    .description_last {
         margin-top: 29px;
-       
+
         max-width: 760px;
     }
 }
@@ -359,6 +409,7 @@ h4 {
         background-color: #000;
         padding: 80px 0;
     }
+
     a {
         text-transform: uppercase;
         font-family: 'Josefin Sans';
@@ -369,6 +420,7 @@ h4 {
         letter-spacing: 0.1em;
         color: #FFFFFF;
     }
+
     p {
         @include paragraph;
         padding: 8px 0 20px;
@@ -377,6 +429,7 @@ h4 {
         line-height: 20px;
         letter-spacing: 0.2em;
     }
+
     .footer_social ul {
         display: flex;
         justify-content: center;
@@ -401,18 +454,17 @@ h4 {
     text-transform: uppercase;
     border: transparent;
     color: #FFFFFF;
-    width: 213px;
-    height: 60px;
+    padding: 20px 40px;
 }
 
 .decor_lines::before {
     content: "";
-    width: 560px;
-    height: 660px;
+    width: 350px;
+    height: 250px;
     border-radius: 50%;
     position: absolute;
     top: 43px;
-    left: 16%;
+    right: 54%;
     border: 1px dashed transparent;
     border-top: 1px dashed #FFF;
     opacity: 0.5;
@@ -420,13 +472,12 @@ h4 {
 
 .decor_lines::after {
     content: "";
-    width: 560px;
-    height: 660px;
+    width: 350px;
+    height: 250px;
     border-radius: 50%;
     position: absolute;
     top: 43px;
-    left: 47%;
-    bottom: 100px;
+    left: 54%;
     border: 1px dashed transparent;
     border-top: 1px dashed #FFF;
     opacity: 0.5;
@@ -440,17 +491,3 @@ i:hover {
 .fa-brands {
     font-size: 32px;
 }
-
-
-
-@media screen and (max-width: 1360px) {
-  .container {
-    max-width: 1360px;
-  }
-  .decor_lines::before {
-    left: 13%;
-  }
-  .description {
-    background: pink;
-  }
-    }
