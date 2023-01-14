@@ -8,6 +8,7 @@
     <title>Travel With Us</title>
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css" />
     <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <link rel="stylesheet" href="assets/css/response.min.css" />
   </head>
@@ -35,6 +36,18 @@
       </div>
     </header>
 
+    <!-- <div id="mobile_menu">
+    
+      <div class="mobile_menu_list">
+        <ul id="nav_links">
+          <li class="url"><a href="#">Who We Are</a></li>
+          <li class="url"><a href="#">What We Do</a></li>
+          <li class="url"><a href="#">Travel With Us</a></li>
+          <li class="url"><a href="#">Contact Us</a></li>
+        </ul>
+      </div> -->
+
+    </div>
     <nav id="navigation">
       <div class="container">
         <div class="nav_inner">
@@ -47,9 +60,24 @@
           </ul>
         </div>
       </div>
-      <div class="navigation_burger">
-        <span></span>
-      </div>
+      <button id="hamb_btn" class="hamburger hamburger--collapse btn-hamb" type="button" onclick="toggleMenu()">
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+      </button>
+      <div id="mobile_menu">
+    
+        <div class="mobile_menu_list">
+          <ul id="nav_links">
+            <li class="url"><a href="#">Who We Are</a></li>
+            <li class="url"><a href="#">What We Do</a></li>
+            <li class="url"><a href="#">Travel With Us</a></li>
+            <li class="url"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      <!-- <div class="navigation_burger"> -->
+     
+      <!-- </div> -->
     </nav>
 
     <section class="first" id="first_anchor">
@@ -255,6 +283,11 @@
       } else {
         navigation.classList.remove("sticky");
       }
+    }
+
+    function toggleMenu() {
+      document.getElementById("mobile_menu").classList.toggle("open")
+      document.getElementById("hamb_btn").classList.toggle("is-active")
     }
   </script>
 </html>

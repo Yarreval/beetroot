@@ -203,6 +203,7 @@ input[type=search] {
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  position: relative;
 }
 #navigation.sticky {
   position: fixed;
@@ -473,4 +474,8 @@ i:hover {
 
 .fa-brands {
   font-size: 32px;
+}
+
+#mobile_menu {
+  display: none;
 }
