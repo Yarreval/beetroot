@@ -247,6 +247,10 @@
     object-fit: cover;
   }
 
+  .logo {
+    margin-left: 70px;
+  }
+
   #nav_links li {
     display: none;
   }
