@@ -263,6 +263,19 @@
         padding: 10px 20px;
     }
     .header_form .header_btn {
-        padding-left: 0; 
+        padding-left: 20px; 
+        width: 28%;
     }
+    input[type=search] {
+        width: 253px;
+        height: 60px;
+        padding: 20px 5px;
+      
+    }
+    .header_form .header_btn, .scroll_down a, input[type=search] {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 12px;
+    }
+       
 }
