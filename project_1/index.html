@@ -121,30 +121,17 @@
           <div class="first_images">
            
             <picture>
-              <source
-                srcset="./assets/images/Image576.jpg"
-                media="(max-width: 568px)"
-              />
-              <source
-                srcset="./assets/images/Image.jpg"
-                media="(max-width: 1400px)"
-              />
-              <img src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw=="
-                data-src="./assets/images/Image.jpg"
-                alt="house on the water" loading="lazy"
-              />
+              <source data-srcset="assets/images/Image576.jpg" media="(max-width: 568px)">
+              <source data-srcset="assets/images/Image.jpg" media="(max-width: 1400px)">
+              <img src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" class="lazy" data-src="./assets/images/Image.jpg"
+                alt="house on the water">
             </picture>
 
             <picture>
-              <source
-                srcset="./assets/images/Image_2_576.jpg"
-                media="(max-width: 568px)"
-              />
-              <source
-                srcset="./assets/images/Image_2.jpg"
-                media="(max-width: 1400px)"
-              />
-              <img src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="./assets/images/Image_2.jpg" alt="mountain" loading="lazy"/>
+              <source media="(max-width: 568px)" data-srcset="assets/images/Image_2_576.jpg" >
+              <source media="(max-width: 1400px)" data-srcset="assets/images/Image_2.jpg" >
+              <img src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" 
+              class="lazy" data-src="assets/images/Image_2.jpg" alt="mountain" />
             </picture>
           </div>
         </div>
@@ -154,15 +141,15 @@
     <div class="first_steps">
       <ul class="steps_icons">
         <li class="icon">
-          <img src="./assets/icons/Vector.svg" />Search Places
+          <img src="assets/icons/Vector.svg" />Search Places
         </li>
 
         <li class="decor_lines">
-          <img src="./assets/icons/check-circle.svg" />Select Places
+          <img src="assets/icons/check-circle.svg" />Select Places
         </li>
 
         <li class="icon">
-          <img src="./assets/icons/thumbs-up.svg" />Book & Enjoy
+          <img src="assets/icons/thumbs-up.svg" />Book & Enjoy
         </li>
       </ul>
     </div>
@@ -220,22 +207,22 @@
             <picture>
 
               <source
-              srcset="./assets/images/ReviewPhoto576.jpg"
+              data-srcset="assets/images/ReviewPhoto576.jpg"
               media="(max-width: 576px)"
             />
               <source
-                srcset="./assets/images/ReviewPhoto768.jpg"
+                data-srcset="assets/images/ReviewPhoto768.jpg"
                 media="(max-width: 768px)"
               />
               <source
-              srcset="./assets/images/ReviewPhoto.jpg"
+              data-srcset="assets/images/ReviewPhoto.jpg"
               media="(max-width: 1400px)"
             />
            
              
               <img src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" 
-                data-src="./assets/images/ReviewPhoto.jpg"
-                alt="My default image" loading="lazy"
+                data-src="assets/images/ReviewPhoto.jpg"
+                alt="My default image" class="lazy"
               />
             </picture>
 
@@ -326,10 +313,10 @@
     }
   </script>
   
-   <!-- <script src="assets/js/lazyload.min.js"></script>
-   <script>
-      var lazyLoadInstance = new LazyLoad({
-    // Your custom settings go here
-  });
-   </script> -->
+ <script src="./assets/js/lazyload.min.js"></script>
+  <script>
+    var lazyLoadInstance = new LazyLoad({
+  // Your custom settings go here
+});
+  </script>
 </html>
