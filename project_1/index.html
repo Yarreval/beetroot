@@ -39,12 +39,12 @@
   </head>
 
   <body>
-    <header id="header" class="lazy" data-bg="assets/images/HeaderBackground.jpg">
+    <div id="headliner" class="lazy" data-bg="assets/images/HeaderBackground.jpg">
       <div class="search">
         <h1>Bhromaon</h1>
         <p>Safe Travel Anywhere</p>
         <form action="/" method="get">
-          <div class="header_form">
+          <div class="headliner_form">
             <input
               type="search"
               name="search"
@@ -52,14 +52,14 @@
               placeholder="Search Your Travel Destination"
               required
             />
-            <button type="submit" class="btn header_btn">Search</button>
+            <button type="submit" class="btn headliner_btn">Search</button>
           </div>
         </form>
         <div class="scroll_down">
           <a href="#first_anchor">Scroll Down</a>
         </div>
       </div>
-    </header>
+    </div>
 
     <!-- <div id="mobile_menu">
     
@@ -72,7 +72,7 @@
         </ul>
       </div> -->
 
-    <nav id="navigation">
+    <header id="header">
       <div class="container">
         <div class="nav_inner">
           <div class="logo"><a href="#">Bhromaon</a></div>
@@ -100,7 +100,7 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </header>
 
     <section class="first lazy" id="first_anchor" data-bg="assets/images/WhyBackground.jpg">
       <div class="container">
@@ -308,15 +308,15 @@
       myFunction();
     };
 
-    var navigation = document.getElementById("navigation");
+    var header = document.getElementById("header");
 
-    var sticky = navigation.offsetTop;
+    var sticky = header.offsetTop;
 
     function myFunction() {
       if (window.pageYOffset >= sticky) {
-        navigation.classList.add("sticky");
+        header.classList.add("sticky");
       } else {
-        navigation.classList.remove("sticky");
+        header.classList.remove("sticky");
       }
     }
 

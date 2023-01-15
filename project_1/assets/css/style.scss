@@ -91,7 +91,7 @@ button {
     margin: 0 auto;
 }
 
-#header {
+#headliner {
     // height: 100vh;
     background-size: cover;
     background: #0376af;
@@ -104,7 +104,7 @@ button {
         display: flex;
         flex-direction: column;
 
-        .header_form {
+        .headliner_form {
             display: flex;
         }
 
@@ -146,7 +146,7 @@ input[type=search] {
     letter-spacing: 0.2em;
 }
 
-.header_form {
+.headliner_form {
     max-width: 650px;
     width: 100%;
     background-color: #fff;
@@ -154,7 +154,7 @@ input[type=search] {
     display: flex;
     padding: 2px;
 
-    .header_btn {
+    .headliner_btn {
         border: none;
         width: 30%;
         background: #5373FD;
@@ -176,7 +176,7 @@ input[type=search] {
     }
 }
 
-.header_btn::before {
+.headliner_btn::before {
     content: url(../icons/search.svg);
     position: relative;
     top: 3px;
@@ -229,7 +229,7 @@ input[type=search] {
 }
 
 
-#navigation {
+#header {
     background-color: rgba(83, 115, 253, 0.7);
     backdrop-filter: blur(10px);
     min-height: 84px;

@@ -78,23 +78,23 @@ button:hover {
   margin: 0 auto;
 }
 
-#header {
+#headliner {
   background-size: cover;
   background: #0376af;
   background-image: url(../images/HeaderBackground.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
-#header .search {
+#headliner .search {
   padding-top: 295px;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-#header .search .header_form {
+#headliner .search .headliner_form {
   display: flex;
 }
-#header .search h1 {
+#headliner .search h1 {
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -103,7 +103,7 @@ button:hover {
   text-transform: uppercase;
   padding-bottom: 8px;
 }
-#header .search p {
+#headliner .search p {
   font-weight: 400;
   font-size: 22px;
   letter-spacing: 0.31em;
@@ -129,7 +129,7 @@ input[type=search] {
   letter-spacing: 0.2em;
 }
 
-.header_form {
+.headliner_form {
   max-width: 650px;
   width: 100%;
   background-color: #fff;
@@ -137,7 +137,7 @@ input[type=search] {
   display: flex;
   padding: 2px;
 }
-.header_form .header_btn {
+.headliner_form .headliner_btn {
   border: none;
   width: 30%;
   background: #5373FD;
@@ -158,7 +158,7 @@ input[type=search] {
   background-size: 300% 100%;
 }
 
-.header_btn::before {
+.headliner_btn::before {
   content: url(../icons/search.svg);
   position: relative;
   top: 3px;
@@ -206,7 +206,7 @@ input[type=search] {
   max-width: 648px;
 }
 
-#navigation {
+#header {
   background-color: rgba(83, 115, 253, 0.7);
   backdrop-filter: blur(10px);
   min-height: 84px;
@@ -215,19 +215,19 @@ input[type=search] {
   text-transform: uppercase;
   position: relative;
 }
-#navigation.sticky {
+#header.sticky {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
   width: 100%;
 }
-#navigation .nav_inner {
+#header .nav_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#navigation .nav_inner .logo {
+#header .nav_inner .logo {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
@@ -235,7 +235,7 @@ input[type=search] {
   line-height: 28px;
   letter-spacing: 0.1em;
 }
-#navigation .nav_inner ul {
+#header .nav_inner ul {
   display: flex;
   justify-content: space-around;
   gap: 40px;
@@ -245,7 +245,7 @@ input[type=search] {
   font-weight: 400;
   line-height: 20px;
 }
-#navigation .nav_inner li:hover {
+#header .nav_inner li:hover {
   transform: scale(1.15);
   transition: all 0.5s ease;
 }
