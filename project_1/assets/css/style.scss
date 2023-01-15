@@ -84,10 +84,10 @@ button {
 #header {
     height: 100vh;
     background-size: cover;
+    background: #0376af;
     background-image: url(../images/HeaderBackground.jpg);
     background-repeat: no-repeat;
     background-position: top;
-
     .search {
         padding-top: 295px;
         text-align: center;
@@ -272,6 +272,7 @@ input[type=search] {
 
 .first {
     background-size: cover;
+    background: #413b3b;
     background-image: url(../images/WhyBackground.jpg);
     background-repeat: no-repeat;
     background-position: top;
@@ -343,6 +344,7 @@ input[type=search] {
 
 .second {
     background-size: cover;
+    background: #948eb0;
     background-image: url(../images/render-1477041_1280.jpg);
     background-repeat: no-repeat;
     background-position: top;
@@ -371,6 +373,7 @@ input[type=search] {
 
 .second_right {
     background-size: cover;
+    background: rgb(192 115 85);
     background-image: url(../images/spain.jpg);
     background-repeat: no-repeat;
     background-position: top;
@@ -383,6 +386,7 @@ input[type=search] {
 
 .last {
     background-size: cover;
+    background: #28292b;
     background-image: url(../images/BG_last.jpg);
     background-repeat: no-repeat;
     background-position: top;

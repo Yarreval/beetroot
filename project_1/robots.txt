@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://yarreval.github.io/beetroot/project_1/sitemap.xml
+Host: yarreval.github.io
