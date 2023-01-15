@@ -285,6 +285,12 @@
     text-transform: uppercase;
     padding: 25px;
   }
+
+  .header_form input[type=search] {
+    padding: 20px 5px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
 }
 @media screen and (max-width: 360px) {
   .container {
@@ -304,19 +310,12 @@
     width: 28%;
   }
 
-  input[type=search] {
-    width: 253px;
-    height: 60px;
-    padding: 20px 5px;
-  }
-
   .header_form .header_btn, .scroll_down a, input[type=search] {
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px;
-  }
-
-  input[type=search] {
-    letter-spacing: 0.15em;
+    line-height: 10px;
+    height: 60px;
+    padding: 20px 5px;
+    letter-spacing: 0.1em;
   }
 }
