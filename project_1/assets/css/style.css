@@ -79,7 +79,6 @@ button:hover {
 }
 
 #header {
-  height: 100vh;
   background-size: cover;
   background: #0376af;
   background-image: url(../images/HeaderBackground.jpg);
@@ -171,7 +170,7 @@ input[type=search] {
   justify-content: center;
   align-items: center;
   padding-top: 208px;
-  margin-bottom: 140px;
+  margin-bottom: 136px;
 }
 .scroll_down a {
   font-family: "Josefin Sans";
@@ -250,9 +249,6 @@ input[type=search] {
   transform: scale(1.15);
   transition: all 0.5s ease;
 }
-#navigation .nav_inner li:hover a:hover {
-  color: #060606;
-}
 
 .first {
   background-size: cover;
@@ -265,10 +261,10 @@ input[type=search] {
 .first .section_first_inner {
   display: flex;
   gap: 135px;
-  padding: 126px 0 16px;
+  padding-top: 126px;
 }
 .first .section_first_inner .description {
-  padding: 190px 0;
+  padding: 150px 0;
 }
 .first .section_first_inner .description p {
   letter-spacing: 0.1em;

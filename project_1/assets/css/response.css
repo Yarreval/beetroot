@@ -3,10 +3,6 @@
     max-width: 1360px;
   }
 
-  #header {
-    height: 100vh;
-  }
-
   .description {
     max-width: 648px;
   }
@@ -33,10 +29,6 @@
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 1024px;
-  }
-
-  #header {
-    height: 100vh;
   }
 
   .first .section_first_inner {
@@ -79,16 +71,8 @@
     max-width: 768px;
   }
 
-  #header {
-    height: 100vh;
-  }
-
   .header_form {
     max-width: 90%;
-  }
-
-  .scroll_down {
-    padding-top: 250px;
   }
 
   .sticky + .first {
@@ -187,10 +171,6 @@
 @media screen and (max-width: 576px) {
   .container {
     max-width: 576px;
-  }
-
-  #header {
-    height: 100vh;
   }
 
   .header_form {

@@ -86,7 +86,7 @@ button {
 }
 
 #header {
-    height: 100vh;
+    // height: 100vh;
     background-size: cover;
     background: #0376af;
     background-image: url(../images/HeaderBackground.jpg);
@@ -183,7 +183,7 @@ input[type=search] {
     justify-content: center;
     align-items: center;
     padding-top: 208px;
-    margin-bottom: 140px;
+    margin-bottom: 136px;
 
     a {
         font-family: 'Josefin Sans';
@@ -274,9 +274,6 @@ input[type=search] {
         li:hover {
             transform: scale(1.15);
             transition: all .5s ease;
-           a:hover {
-            color: #060606;
-           }
         }
     }
 
@@ -296,7 +293,7 @@ input[type=search] {
 
         .description {
 
-            padding: 190px 0;
+            padding: 150px 0;
 
             p {
                 letter-spacing: 0.1em;
@@ -309,7 +306,7 @@ input[type=search] {
             width: 100%;
         }
 
-        padding: 126px 0 16px;
+        padding-top: 126px;
 
     }
 
