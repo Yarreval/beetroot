@@ -309,4 +309,8 @@
     padding: 20px 5px;
     letter-spacing: 0.1em;
   }
+
+  .scroll_down a:after {
+    top: 30px;
+  }
 }

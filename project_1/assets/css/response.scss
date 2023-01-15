@@ -342,5 +342,7 @@ display: block;
         padding: 20px 5px;
         letter-spacing: .1em;
     }
-
+    .scroll_down a:after {
+        top: 30px;
+    }
 }
