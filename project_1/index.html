@@ -39,7 +39,7 @@
   </head>
 
   <body>
-    <header id="header">
+    <header id="header" class="lazy" data-bg="assets/images/HeaderBackground.jpg">
       <div class="search">
         <h1>Bhromaon</h1>
         <p>Safe Travel Anywhere</p>
@@ -102,7 +102,7 @@
       </div>
     </nav>
 
-    <section class="first" id="first_anchor">
+    <section class="first lazy" id="first_anchor" data-bg="assets/images/WhyBackground.jpg">
       <div class="container">
         <div class="section_first_inner">
           <div class="description">
@@ -119,24 +119,32 @@
             <a href="#" class="btn">Explore Places</a>
           </div>
           <div class="first_images">
+           
             <picture>
               <source
                 srcset="./assets/images/Image576.jpg"
                 media="(max-width: 568px)"
               />
-              <source srcset="./assets/images/Image576.jpg" />
-              <img loading="lazy"
+              <source
                 srcset="./assets/images/Image.jpg"
-                alt="house on the water"
+                media="(max-width: 1400px)"
+              />
+              <img src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw=="
+                data-src="./assets/images/Image.jpg"
+                alt="house on the water" loading="lazy"
               />
             </picture>
+
             <picture>
               <source
                 srcset="./assets/images/Image_2_576.jpg"
                 media="(max-width: 568px)"
               />
-              <source srcset="./assets/images/Image_2_576.jpg" />
-              <img loading="lazy" srcset="./assets/images/Image_2.jpg" alt="mountain" />
+              <source
+                srcset="./assets/images/Image_2.jpg"
+                media="(max-width: 1400px)"
+              />
+              <img src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="./assets/images/Image_2.jpg" alt="mountain" loading="lazy"/>
             </picture>
           </div>
         </div>
@@ -146,20 +154,20 @@
     <div class="first_steps">
       <ul class="steps_icons">
         <li class="icon">
-          <img loading="lazy" src="./assets/icons/Vector.svg" />Search Places
+          <img src="./assets/icons/Vector.svg" />Search Places
         </li>
 
         <li class="decor_lines">
-          <img loading="lazy" src="./assets/icons/check-circle.svg" />Select Places
+          <img src="./assets/icons/check-circle.svg" />Select Places
         </li>
 
         <li class="icon">
-          <img loading="lazy" src="./assets/icons/thumbs-up.svg" />Book & Enjoy
+          <img src="./assets/icons/thumbs-up.svg" />Book & Enjoy
         </li>
       </ul>
     </div>
 
-    <section class="second">
+    <section class="second lazy" data-bg="assets/images/render-1477041_1280.jpg">
       <div class="container">
         <div class="section_second_inner">
           <div class="description">
@@ -176,7 +184,7 @@
       </div>
     </section>
 
-    <section class="second second_right">
+    <section class="second second_right lazy" data-bg="assets/images/spain.jpg">
       <div class="container">
         <div class="section_second_inner">
           <div class="description">
@@ -193,7 +201,7 @@
       </div>
     </section>
 
-    <section class="last lazy-bg" data-src="./assets/images/BG_last.jpg">
+    <section class="last lazy" data-bg="assets/images/BG_last.jpg">
       <div class="container">
         <h2>What Our Tourists Say</h2>
         <div class="last_inner">
@@ -210,18 +218,24 @@
           </div>
           <div class="avatar_image">
             <picture>
+
+              <source
+              srcset="./assets/images/ReviewPhoto576.jpg"
+              media="(max-width: 576px)"
+            />
               <source
                 srcset="./assets/images/ReviewPhoto768.jpg"
                 media="(max-width: 768px)"
               />
               <source
-              srcset="./assets/images/ReviewPhoto576.jpg"
-              media="(max-width: 576px)"
+              srcset="./assets/images/ReviewPhoto.jpg"
+              media="(max-width: 1400px)"
             />
+           
              
-              <img loading="lazy" 
-                srcset="./assets/images/ReviewPhoto.jpg"
-                alt="My default image"
+              <img src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" 
+                data-src="./assets/images/ReviewPhoto.jpg"
+                alt="My default image" loading="lazy"
               />
             </picture>
 
@@ -311,4 +325,11 @@
       document.getElementById("hamb_btn").classList.toggle("is-active")
     }
   </script>
+  
+   <!-- <script src="assets/js/lazyload.min.js"></script>
+   <script>
+      var lazyLoadInstance = new LazyLoad({
+    // Your custom settings go here
+  });
+   </script> -->
 </html>
