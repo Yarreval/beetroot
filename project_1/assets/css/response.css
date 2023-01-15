@@ -87,6 +87,11 @@
     padding: 0 0 16px;
   }
 
+  .first picture:last-child {
+    padding-top: 0;
+    float: none;
+  }
+
   .decor_lines::after {
     width: 360px;
   }
@@ -193,6 +198,12 @@
   }
   .first .section_first_inner .first_images img {
     max-width: 258px;
+    width: 100%;
+  }
+
+  .first picture:last-child {
+    padding-top: 0;
+    float: none;
   }
 
   .sticky {

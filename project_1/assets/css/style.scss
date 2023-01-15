@@ -302,18 +302,19 @@ input[type=search] {
         }
 
         .first_images img {
-            max-width: 350px;
-            width: 100%;
+            max-width: 100%;
+            width: 350px;
+           
         }
-
         padding-top: 126px;
-
     }
 
-    img:last-child {
+  picture {
+    &:last-child {
+        padding-top: 20px;
         float: right;
-        padding-top: 12px;
-    }
+       }
+  }
 }
 
 

@@ -271,12 +271,12 @@ input[type=search] {
   padding-bottom: 28px;
 }
 .first .section_first_inner .first_images img {
-  max-width: 350px;
-  width: 100%;
+  max-width: 100%;
+  width: 350px;
 }
-.first img:last-child {
+.first picture:last-child {
+  padding-top: 20px;
   float: right;
-  padding-top: 12px;
 }
 
 .first_steps {
